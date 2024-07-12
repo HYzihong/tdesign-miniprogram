@@ -27,17 +27,4 @@ export default class CellGroup extends SuperComponent {
     prefix,
     classPrefix: name,
   };
-
-  lifetimes = {
-    ready() {
-      this.updateLastChid();
-    },
-  };
-
-  methods = {
-    updateLastChid() {
-      const items = this.$children;
-      items.forEach((child, index) => child.setData({ isLastChild: index === items.length - 1 }));
-    },
-  };
 }

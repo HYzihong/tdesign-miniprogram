@@ -37,7 +37,6 @@ export default class Cell extends SuperComponent {
   data = {
     prefix,
     classPrefix: name,
-    isLastChild: false,
   };
 
   observers = {
